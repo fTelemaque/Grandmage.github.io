@@ -1,0 +1,196 @@
+body {
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+    
+@keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+ }
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+ h1 {
+    color: white;
+    font-size: 3rem;
+    text-shadow: rgba(0, 0, 0, 0.85) 0px 3px 6px, rgba(0, 0, 0, 0.80) 0px 3px 6px;
+ }
+
+img {
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    
+}
+
+.shakeimage {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+#wrapper-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputsite {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #333;
+    font-size: 1.2rem;
+      margin: 0 auto;
+    padding: 1rem 1rem;
+    border-radius: 0.2rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 10%;
+    display: block;
+    border-bottom: 0 solid transparent;
+    transition: all 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+  
+  
+  
+
+  
+.guess-button, .keepplaying {
+    align-items: center;
+    background-clip: padding-box;
+    background-color: #000000;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin-top: 20px;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+}
+  
+.guess-button:hover,
+.guess-button:focus {
+    background-color: #ffffff;
+    box-shadow: rgba(6, 6, 6, 0.1) 0 4px 12px;
+    color: #000000;
+}
+  
+.guess-button:hover {
+    transform: translateY(-1px);
+}
+
+.guess-button:active {
+    background-color: #000000;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+}
+  
+
+  
+.keepplaying:hover,
+.keepplaying:focus {
+    background-color: #ffffff;
+    box-shadow: rgba(6, 6, 6, 0.1) 0 4px 12px;
+    color: #000000;
+}
+  
+.keepplaying:hover {
+    transform: translateY(-1px);
+}
+  
+.keepplaying:active {
+    background-color: #000000;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+}
+
+#messagealert {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 705px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  img {
+    width: 90vw;
+    height: auto;
+  }
+}
+
+#shakeimage:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
